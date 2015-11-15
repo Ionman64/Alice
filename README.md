@@ -14,5 +14,5 @@ to help people take control of their data, by keeping it away from servers and o
 upload the information, but ultimately that is their choice. Using this data, Alice should then make simple decisions 
 such as suggesting the best place for two people to meet based on previous encounters or asking alice to find two hours
 in your schedule for relaxing. Alice should then shuffle the information around and provide it to you in a format your
-favorite calendar or messaging app can recieve without interfering. More importantly, alice should protect the data 
+favorite calendar or messaging app can recieve without interfering. More importantly, Alice should protect the data 
 and remain in the background as much as possible.
