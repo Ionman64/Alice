@@ -1,12 +1,12 @@
 import tornado.ioloop
 import tornado.web
 from dispatcher import Dispatcher
-import Settings
+from settings import Settings
 import uuid
 
+settings = Settings()
+
 class MainHandler(tornado.web.RequestHandler):
-    def __init__(self):
-        print ("Server Running on port %s" % self.
     def get(self):
         dispatch = Dispatcher(str(uuid.uuid4()))
         self.write(dispatch.getIdentifier())
@@ -20,5 +20,5 @@ def make_app():
 
 if __name__ == "__main__":
     app = make_app()
-    app.listen(8888)
+    app.listen(settings.getSetting("portNum"))
     tornado.ioloop.IOLoop.current().start()

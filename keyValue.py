@@ -2,7 +2,7 @@
 #18/11/2015
 
 class KeyValue():
-    def __init__(key, value):
+    def __init__(self, key, value):
         self.key = key
         self.value = value
     def getKey(self):
@@ -11,7 +11,11 @@ class KeyValue():
         return self.value
 
 class KeyValueHandler():
-    def __init__():
+    def __init__(self):
         self.keyValues = []
-    def addItem(key, value):
+    def addItem(self, key, value):
         self.keyValues.append(KeyValue(key, value))
+    def getItem(self, key):
+        for keyValue in self.keyValues:
+            if (keyValue.getKey() == key):
+                return keyValue.getValue()
