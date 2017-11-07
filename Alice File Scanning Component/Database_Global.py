@@ -3,9 +3,6 @@ import sqlite3 as mysql
 def is_array(var):
     return isinstance(var, (list, tuple))
 
-def Ext(var):
-    return ''.join([var, '.sqlite']) #Enter Database Extension Here
-
 def SQL_Prep(Var): #Will turn lists/Tuples into strings e.g. (Hello, World)
     if not is_array(Var):
         return Var
